@@ -272,13 +272,13 @@ nav{
         position: fixed;
     }
     .company.activetwo{
-        padding-bottom: 100px;
+        padding-bottom: 120px;
     }
     .login.activetwo{
-        padding-top: 100px;
+        padding-top: 120px;
     }
     .register.activetwo{
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
 }
