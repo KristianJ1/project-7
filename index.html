@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="maincontainer">
+  <div class="navbar">
+    <img src="images/logo.svg" alt="">
+    <nav>
+      <ul>
+        <div class="left">
+        <li><button class="features">Features <img src="images/icon-arrow-down.svg" alt="" class="arrowone"></button></li>
+        <li><button class="company">Company <img src="images/icon-arrow-down.svg" alt="" class="arrowtwo"></button></li>
+        <li><button>Careers</button></li>
+        <li><button>About</button></li>
+        </div>
+        <div class="right">
+        <li><button class="login">Login</button></li>
+        <li><button class="register">Register</button></li>
+        </div>
+        
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+    </nav>
+  </div>
+  <div class="textwall">
+   <div class="textone">
+    <h1>Make <br> remote work</h1>
+    <p>Get your team in sync, no matter your location. <br> Streamline processes, 
+    create team rituals, and <br> watch productivity soar.</p>
+    <button>Learn More</button>
+    <div class="images">
+    <img src="images/client-databiz.svg" alt="">
+    <img src="images/client-audiophile.svg" alt="">
+    <img src="images/client-meet.svg" alt="">
+    <img src="images/client-maker.svg" alt="">
+  </div>
+
+  </div>
+  <div class="imagetwo">
+    <img src="images/image-hero-desktop.png" alt="">
+  </div>
+  </div>
+<div class="dropdownone display-none">
+  <div class="imagesdrop">
+    <img src="images/icon-todo.svg" alt="">
+    <img src="images/icon-calendar.svg" alt=""> 
+    <img src="images/icon-reminders.svg" alt="">
+    <img src="images/icon-planning.svg" alt="">
+  </div>
+  <p>Todo List</p>
+  <p>Calendar</p>
+  <p>Reminders</p>
+  <p>Planning</p>
+</div>
+<div class="dropdowntwo display-none">
+  <p>History</p>
+  <p>Our Team</p>
+  <p>Blog</p>
+</div>
+
+</div>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
