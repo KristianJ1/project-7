@@ -43,28 +43,27 @@ hamb.addEventListener("click", function(){
     left.classList.toggle("active");
 })
 
-var x = window.matchMedia("(max-width : 768px)");
+
 
 var login = document.querySelector(".login");
 
 var register =  document.querySelector("register");
 
 
-if(x.matches){
-    features.addEventListener("click", function(){
-        features.classList.toggle("activeone");
-        login.classList.toggle("activeone");
-        register.classList.toggle("activeone");
-        
-    })
-}
-if(x.matches){
-    company.addEventListener("click", function(){
-        company.classList.toggle("activetwo");
-        login.classList.toggle("activetwo");
-        register.classList.toggle("activetwo");
-        
-    })
-}
+features.addEventListener("click", function(){
+    if(window.innerWidth <= 768){
+            features.classList.toggle("activeone");
+            login.classList.toggle("activeone");
+            register.classList.toggle("activeone");
+    }})
+    
+
+company.addEventListener("click", function(){
+    if(window.innerWidth <= 768){
+    company.classList.toggle("activetwo");
+    login.classList.toggle("activetwo");
+    register.classList.toggle("activetwo");
+}})
+
 
 
